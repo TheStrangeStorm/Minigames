@@ -43,9 +43,10 @@ int main()
 {
 	int run = 1;
 
+	srandom(time(0));
+
 	while (run)
 	{
-		srandom(time(0));
 
 		char buffer[32];
 
