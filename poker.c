@@ -348,12 +348,12 @@ void host()
 		cards[index] = _card;
 	}
 
-	for (int i = 0; i < 52; i++) 
+	/*for (int i = 0; i < 52; i++) 
 	{
 		unsigned char card = cards[i];
 
 		display_card(card, card_buffer);
-	}
+	}*/
 
 	for (int i = 0; i < number_of_clients; i++) 
 	{

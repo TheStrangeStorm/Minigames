@@ -1,6 +1,11 @@
 .PHONY: all
 
-all: rps
+CC=gcc
+CFLAGS = -lm
 
-rps:
-	@gcc -lm -o rps rps.c
+all: $(patsubst %.c, %, $(wildcard *.c))
+
+SRC=$(wildcard *.c)
+
+%: %.c
+	@$(CC) $(CFLAGS) -o $@ $<
